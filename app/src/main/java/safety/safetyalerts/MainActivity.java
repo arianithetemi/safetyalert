@@ -77,7 +77,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                         fragNavController.switchTab(FragNavController.TAB4);
                         break;
                     case R.id.tab_news:
-                        fragNavController.switchTab(FragNavController.TAB5);
+                        //fragNavController.switchTab(FragNavController.TAB5);
                         break;
                 }
 
@@ -94,10 +94,10 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng location1 = new LatLng(42.6629,21.1655);
-        LatLng location2 = new LatLng(42.7629,21.1655);
-        LatLng location3 = new LatLng(42.8629,21.1655);
-        LatLng location4 = new LatLng(42.9629,21.1655);
+        LatLng location1 = new LatLng(42.698302, 21.467972);
+        LatLng location2 = new LatLng(42.880713,21.132889);
+        LatLng location3 = new LatLng(42.675084, 20.832138);
+        LatLng location4 = new LatLng(42.414047, 21.174088);
 
 
         mMap.addMarker(new MarkerOptions().position(location1).title("Melbourne").icon(BitmapDescriptorFactory.fromResource(R.drawable.circleabig)));
@@ -111,7 +111,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 LatLng sydney = new LatLng(location.getLatitude(), location.getLongitude());
                 mMap.addMarker(new MarkerOptions().position(sydney).title("Your location").icon(BitmapDescriptorFactory.fromResource(R.drawable.circleasmall)));
                 CameraUpdate locationn = CameraUpdateFactory.newLatLngZoom(
-                        sydney, 10);
+                        sydney, 9);
                 mMap.animateCamera(locationn);
             }
         });
