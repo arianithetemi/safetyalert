@@ -13,7 +13,9 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.ncapdevi.fragnav.FragNavController;
 import com.roughike.bottombar.BottomBar;
@@ -32,7 +34,7 @@ import safety.safetyalerts.fragments.HomeFragment;
 import safety.safetyalerts.fragments.NearPlacesFragment;
 import safety.safetyalerts.fragments.NewsFragment;
 
-public class MainActivity extends FragmentActivity implements OnMapReadyCallback , BlankFragment.OnFragmentInteractionListener, HomeFragment.OnFragmentInteractionListener , DataChartsFragment.OnFragmentInteractionListener , NearPlacesFragment.OnFragmentInteractionListener {
+public class MainActivity extends FragmentActivity implements OnMapReadyCallback , BlankFragment.OnFragmentInteractionListener, HomeFragment.OnFragmentInteractionListener , DataChartsFragment.OnFragmentInteractionListener , NearPlacesFragment.OnFragmentInteractionListener, AlertsFragment.OnFragmentInteractionListener ,NewsFragment.OnFragmentInteractionListener {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     public FragNavController fragNavController;
@@ -67,11 +69,9 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                         break;
                     case R.id.tab_charts:
                         fragNavController.switchTab(FragNavController.TAB2);
-                        Log.e(TAG , "test1");
                         break;
                     case R.id.tab_near:
                         fragNavController.switchTab(FragNavController.TAB3);
-                        Log.e(TAG , "test2");
                         break;
                     case R.id.tab_al:
                         fragNavController.switchTab(FragNavController.TAB4);
@@ -98,16 +98,18 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng location2 = new LatLng(42.7629,21.1655);
         LatLng location3 = new LatLng(42.8629,21.1655);
         LatLng location4 = new LatLng(42.9629,21.1655);
-        mMap.addMarker(new MarkerOptions().position(location1).title("Your location"));
-        mMap.addMarker(new MarkerOptions().position(location2).title("Your location"));
-        mMap.addMarker(new MarkerOptions().position(location3).title("Your location"));
-        mMap.addMarker(new MarkerOptions().position(location4).title("Your location"));
+
+
+        mMap.addMarker(new MarkerOptions().position(location1).title("Melbourne").icon(BitmapDescriptorFactory.fromResource(R.drawable.circleabig)));
+        mMap.addMarker(new MarkerOptions().position(location2).title("Your location").icon(BitmapDescriptorFactory.fromResource(R.drawable.circleasmall)));
+        mMap.addMarker(new MarkerOptions().position(location3).title("Your location").icon(BitmapDescriptorFactory.fromResource(R.drawable.circlea60)));
+        mMap.addMarker(new MarkerOptions().position(location4).title("Your location").icon(BitmapDescriptorFactory.fromResource(R.drawable.circleadangersmall)));
         // Add a marker in Sydney and move the camera
         SmartLocation.with(getApplicationContext()).location().start(new OnLocationUpdatedListener() {
             @Override
             public void onLocationUpdated(Location location) {
                 LatLng sydney = new LatLng(location.getLatitude(), location.getLongitude());
-                mMap.addMarker(new MarkerOptions().position(sydney).title("Your location"));
+                mMap.addMarker(new MarkerOptions().position(sydney).title("Your location").icon(BitmapDescriptorFactory.fromResource(R.drawable.circleasmall)));
                 CameraUpdate locationn = CameraUpdateFactory.newLatLngZoom(
                         sydney, 10);
                 mMap.animateCamera(locationn);

@@ -3,26 +3,57 @@
 
     <item
         is-multidex="true"
-        jar="/home/arianit/AndroidStudioProjects/safetyalert/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="C:\Users\SHB\AndroidStudioProjects\safetyalert\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="/home/arianit/AndroidStudioProjects/safetyalert/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3dd684c2a96fa9e6b78b7c4e043013c5faa4755d/classes.dex" />
+        <dex dex="C:\Users\SHB\AndroidStudioProjects\safetyalert\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e57c425c11d1c5920af9fd6ba607c2a6444cb77c\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/arianit/AndroidStudioProjects/safetyalert/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="C:\Users\SHB\.android\build-cache\3d17e5fb21e9922ecc30c89c26b57c7f068f01db\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-<<<<<<< HEAD
+        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
+        <dex dex="C:\Users\SHB\AndroidStudioProjects\safetyalert\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_712210dc9083ab3e48dc18b9b180bc98ccdcbcde\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\SHB\.android\build-cache\ac55b4235ab0b554e7dc17d12ad2e146262bd807\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6da05b7498da036b5b37c3beb861cd2060929dcd">
+        <dex dex="C:\Users\SHB\AndroidStudioProjects\safetyalert\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e5048b116afe16602afb53a957eb5f611665f536\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\SHB\.android\build-cache\67db63cb7c3ed3c42afb0a20e981326e6caea831\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="C:\Users\SHB\AndroidStudioProjects\safetyalert\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e30a8f023d1cc056c92c44dca40b139c82d36a0a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\SHB\AndroidStudioProjects\safetyalert\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
         sha1="e5bdc6ed7a38657aa16c30ea8b15a6bab90a0d03">
         <dex dex="C:\Users\SHB\AndroidStudioProjects\safetyalert\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_4c9c86ca66d59d2e04a98d5f54b069eb2813ae58\classes.dex" />
-=======
-        sha1="167eb3739ccaf69f77130578ad40b07e1322c1f0">
-        <dex dex="/home/arianit/AndroidStudioProjects/safetyalert/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d911dded06c9518fcc0ba974825d58a002a00cf6/classes.dex" />
->>>>>>> 15839f0d5ab6ea353fdeda41b9a9c0c771644f5e
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\SHB\.android\build-cache\f4e9c9439be67df5d21edcb19f868a4e3760a0d6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
+        <dex dex="C:\Users\SHB\AndroidStudioProjects\safetyalert\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6c7283d1afeea87093111b1922cd8437a5c1e449\classes.dex" />
     </item>
 
 </items>
