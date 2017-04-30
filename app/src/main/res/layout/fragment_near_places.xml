@@ -2,12 +2,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context="safety.safetyalerts.fragments.NearPlacesFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+    <RelativeLayout
+        android:id="@+id/layoutaa"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:layout_width="match_parent"
+        android:background="#5d8cae"
+        android:layout_height="260px">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="720px"
+            android:layout_height="250px"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:textColor="#FFFFFF"
+            android:gravity="left"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="My Location : New Delhi, India Nearest Place: Mumbai, India Distance: 12.1 km"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="30px"
+        android:layout_height="match_parent"
+        android:layout_marginTop="290px"
+        android:background="@drawable/nearest" />
 </FrameLayout>

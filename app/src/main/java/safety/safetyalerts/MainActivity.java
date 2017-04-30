@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -24,12 +25,16 @@ import java.util.List;
 
 import io.nlopez.smartlocation.OnLocationUpdatedListener;
 import io.nlopez.smartlocation.SmartLocation;
+import safety.safetyalerts.fragments.AlertsFragment;
 import safety.safetyalerts.fragments.BlankFragment;
 import safety.safetyalerts.fragments.DataChartsFragment;
 import safety.safetyalerts.fragments.HomeFragment;
+import safety.safetyalerts.fragments.NearPlacesFragment;
+import safety.safetyalerts.fragments.NewsFragment;
 
-public class MainActivity extends FragmentActivity implements OnMapReadyCallback , BlankFragment.OnFragmentInteractionListener, HomeFragment.OnFragmentInteractionListener , DataChartsFragment.OnFragmentInteractionListener {
+public class MainActivity extends FragmentActivity implements OnMapReadyCallback , BlankFragment.OnFragmentInteractionListener, HomeFragment.OnFragmentInteractionListener , DataChartsFragment.OnFragmentInteractionListener , NearPlacesFragment.OnFragmentInteractionListener {
 
+    private static final String TAG = MainActivity.class.getSimpleName();
     public FragNavController fragNavController;
     private GoogleMap mMap;
 
@@ -45,6 +50,9 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         List<Fragment> fragments = new ArrayList<>();
         fragments.add(BlankFragment.newInstance("",""));
         fragments.add(DataChartsFragment.newInstance("",""));
+        fragments.add(NearPlacesFragment.newInstance("",""));
+        fragments.add(AlertsFragment.newInstance("",""));
+        fragments.add(NewsFragment.newInstance("",""));
 
         fragNavController = new FragNavController(getSupportFragmentManager(), R.id.content, fragments);
         fragNavController.switchTab(FragNavController.TAB1);
@@ -53,11 +61,27 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelected(@IdRes int tabId) {
-                if (tabId == R.id.tab_home) {
-                    fragNavController.switchTab(fragNavController.TAB1);
-                } else if (tabId == R.id.tab_charts) {
-                    fragNavController.switchTab(FragNavController.TAB2);
+                switch(tabId){
+                    case R.id.tab_home:
+                        fragNavController.switchTab(fragNavController.TAB1);
+                        break;
+                    case R.id.tab_charts:
+                        fragNavController.switchTab(FragNavController.TAB2);
+                        Log.e(TAG , "test1");
+                        break;
+                    case R.id.tab_near:
+                        fragNavController.switchTab(FragNavController.TAB3);
+                        Log.e(TAG , "test2");
+                        break;
+                    case R.id.tab_al:
+                        fragNavController.switchTab(FragNavController.TAB4);
+                        break;
+                    case R.id.tab_news:
+                        fragNavController.switchTab(FragNavController.TAB5);
+                        break;
                 }
+
+
             }
         });
     }
