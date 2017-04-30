@@ -19,7 +19,7 @@
 
     <tab
         id="@+id/tab_news"
-        icon="@drawable/ic_near_me"
+        icon="@drawable/ic_subject"
         title="News" />
 
 </tabs>
