@@ -1,0 +1,25 @@
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_home_black_24dp"
+        title="Home" />
+    <tab
+        id="@+id/tab_charts"
+        icon="@drawable/ic_insert_chart"
+        title="Chart Data" />
+    <tab
+        id="@+id/tab_near"
+        icon="@drawable/ic_near_me"
+        title="Near Places" />
+
+    <tab
+        id="@+id/tab_al"
+        icon="@drawable/ic_notifications_active"
+        title="Alerts" />
+
+    <tab
+        id="@+id/tab_news"
+        icon="@drawable/ic_near_me"
+        title="News" />
+
+</tabs>

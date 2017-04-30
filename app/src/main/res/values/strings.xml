@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SafetyAlerts</string>
+    <string name="title_home">Home</string>
+    <string name="title_data_charts">Data Charts</string>
+    <string name="title_nearest">Near Places</string>
+    <string name="title_alerts">Alerts</string>
+    <string name="title_news">News</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_content_description">Content Description</string>
+    <string name="safety">Safety</string>
+    <string name="alert">Alert</string>
+    <string name="discover_risks">Discover risks</string>
+    <string name="slogan">An app that makes safety first priority.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="landslides">Landslides statistics through years</string>
+    <string name="landslides2">Landslides statistices between some states</string>
+</resources>

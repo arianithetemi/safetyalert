@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="frag-nav-1.0.3">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/544bcff735849e4e2a69d83794a088a2469ed1c0/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/544bcff735849e4e2a69d83794a088a2469ed1c0/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ncapdevi/frag-nav/1.0.3/23c9735e770541942245bbc26818cb7ec93305bc/frag-nav-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

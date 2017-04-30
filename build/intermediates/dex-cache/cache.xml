@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/arianit/AndroidStudioProjects/SafetyAlerts/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8968da51a2b9e98264ba2df55ad6cba4118449ab">
+        <dex dex="/home/arianit/AndroidStudioProjects/SafetyAlerts/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e94b56b685a8b9deb14d8e96616b77c63390a204/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/arianit/AndroidStudioProjects/SafetyAlerts/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/home/arianit/AndroidStudioProjects/SafetyAlerts/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_77ea6f319dc3974b368adce6704e80935fec7619/classes.dex" />
+    </item>
+
+</items>
