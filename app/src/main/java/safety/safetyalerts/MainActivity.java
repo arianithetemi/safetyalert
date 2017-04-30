@@ -58,7 +58,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
         fragNavController = new FragNavController(getSupportFragmentManager(), R.id.content, fragments);
         fragNavController.switchTab(FragNavController.TAB1);
-        //new comment
+        //new commenttttt
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
